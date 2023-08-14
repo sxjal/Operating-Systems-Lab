@@ -1,5 +1,8 @@
-#include<bits/stdc++.h>
-
+ 
+#include<unistd.h>
+#include<sys/types.h>
+ 
+#include<iostream>
 using namespace std;
 
 int main(){
@@ -10,11 +13,11 @@ int main(){
         if(fork())
         {
             a++;
-            cout<<a<<endl;
+            cout<<"Printing Parent "<<a<<endl;
         }
         else{
               a += 2;
-              cout<<a<<endl;
+              cout<<"Printing Child  "<<a<<endl;
         }
     }
     return 0;
