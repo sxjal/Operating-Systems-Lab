@@ -1,13 +1,13 @@
  
 #include<unistd.h>
 #include<sys/types.h>
- 
 #include<iostream>
 using namespace std;
 
 int main(){
     int a = 0;
  
+    
     while(a<3)
     {
         if(fork())
