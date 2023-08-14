@@ -5,7 +5,10 @@
 using namespace std;
 
 int main(){
-     int pid = fork();
-     
+    int pid = fork();
+    
+    cout<<pid<<endl ;
+    pid = fork();
+    cout<<pid<<endl;
     return 0;
 }
